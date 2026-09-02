@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import API from "../services/api";
 import CreatePost from "../components/CreatePost";
-import CommentSection from "../components/CommentSection";
+import CommentSection from "../components/ CommentSection";
 
 function Home() {
 
@@ -295,10 +295,9 @@ function Home() {
                         🔍 Explore
                     </a>
 
-                    <a href="/profile">
-                        👤 Profile
-                    </a>
-
+                   <a href={`/profile/${localStorage.getItem("username")}`}>
+    👤 Profile
+</a>
                     <a href="/notifications">
                         🔔 Notifications
                     </a>

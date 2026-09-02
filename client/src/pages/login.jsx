@@ -40,7 +40,10 @@ function Login() {
                 response.data.user,
                 response.data.token
             );
-
+localStorage.setItem(
+    "username",
+    response.data.user.username
+);
             navigate("/");
 
         } catch (error) {
